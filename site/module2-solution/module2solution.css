@@ -3,16 +3,16 @@ h2{
 	text-align: center;
 }
 .wrapper{
-	max-width: 1200px;
+	width: 1200px;
 	box-sizing: border-box;
 	margin: 0 auto;
 }
 
 .section-1{
-	max-width: 380px; 
-	float: left;
-	margin-top: 70px; 
+	width: 380px; 
+	float: left; 
 	margin: 0 auto;
+	margin-top: 70px;
 	margin-left: 10px;
 	margin-bottom: 15px;
 	background-color: gray;
@@ -24,11 +24,12 @@ h2{
 	font-size: 16px;
 	line-height: 22px;
 	margin-left: 10px;
+	margin-right: auto;
 	font-weight: bold;
 }
 .section-1 h3{
-	max-width: 50%;
-	margin-left: 65%;
+	width: 50%;
+	margin-left: 49%;
 	margin-top: 0;
 	border: 2px solid black;
 	text-align: center;
@@ -42,4 +43,19 @@ h2{
 }
 .col-chick{
 	background-color: red;
+}
+@media (min-width: 1200px) {
+	.section-1{
+		width: 380px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.section-1{
+		width: 400px;
+	}
+}
+@media (max-width: 991px) {
+	.section-1{
+		width: 50%;
+	}
 }
